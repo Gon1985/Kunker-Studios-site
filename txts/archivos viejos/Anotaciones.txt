@@ -1,0 +1,63 @@
+inset:0;
+margin:auto;
+
+
+
+
+<body>
+<section class="header">
+
+<ul>
+<li><a href="seccion2.html" class="nav-link">Illustrations</a></li>
+<li><a href="seccion3.html" class="nav-link">About us</a></li>
+<li><a href="seccion4.html">Concept Art</a></li>
+<li><a href="seccion5.html">Weapons Models</a></li>
+<li><a href="seccion6.html">Contact</a></li>
+
+
+
+css
+----
+
+/*menu sidebar blur effect*/
+@supports (backdrop-filter: blur(1rem)){
+.primary-navigation{
+    background: hsl(0 0% 100% / 0.1);
+    backdrop-filter: blur(1rem);
+}
+}
+
+
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+
+
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+
+nav .fa {
+    display: none;
+}
+
+
+
+<link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">

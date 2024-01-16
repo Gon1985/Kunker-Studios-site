@@ -1,0 +1,27 @@
+/*-------------------------------Carrusel images-------------------------*/    
+
+.wrapper .carousel{
+white-space: nowrap;
+}
+
+.slider-container {
+height: 500px;
+width: 800px;
+display: flex;
+overflow: auto;
+scroll-snap-type: x mandatory;
+}
+
+
+.slider-container .slide {
+scroll-snap-align: start;
+}
+
+
+.slider-container img{
+width: 800px;
+height: 100%;
+object-fit: cover;
+}
+
+/*-----------------------------------------------------------------------*/

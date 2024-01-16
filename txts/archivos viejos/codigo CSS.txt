@@ -1,0 +1,115 @@
+/*tipografias */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+    /* 1 */
+    -webkit-text-size-adjust: 100%;
+    /* 2 */
+}
+
+
+/*------------HEADER NAV BAR-----------------------------------------------------------------*/
+
+
+
+@media (max-width:700px) {
+    header {
+        flex-direction: column;
+
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+
+}
+
+.logo {
+
+    align-items: center;
+    padding-right: 1%;
+    margin-right: auto;
+
+}
+
+.logo img {
+    height: 130px;
+
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.navlist a {
+    inset: 0;
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    color: white;
+    padding-left: -5%;
+    padding-right: -5%;
+    margin-left: auto;
+    font-size: 14px;
+    font-weight: 50;
+    transition: all .55s ease;
+}
+
+
+
+body {
+    background: black;
+    margin: 0;
+  }
+
+/* despliege de las secciones navbar*/
+.navlist {
+    display: flex;
+
+}
+
+.articulo2titulo {
+    text-align: right;
+    color: #fff;
+
+}
+
+.container {
+    max-width: 1000px;
+    width: 70%;
+    line-height: normal;
+    margin-left: 50px;
+    color: #ffffffb0;
+}
+
+/*-------------------------------Carrusel images-------------------------*/
+.carrusel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+ 
+}
+
+.elemento {
+    flex: 1 0 auto;
+    margin: 0 50px;
+    background-color: #fff;
+    background: cover;
+    width: 600px;
+    height: 600px;
+   
+}
+
+/*-----------------------------------------------------------------------*/

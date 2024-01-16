@@ -1,0 +1,30 @@
+    <style>
+        /* Estilos para el reproductor de audio */
+        audio {
+            width: 50%;
+            /* Ancho proporcional */
+            height: 20px;
+            max-width: 300px;
+            /* Ancho máximo para evitar que se haga demasiado pequeño */
+            margin-left: 36px;
+            margin-right: 10px;
+            background-color: black;
+            /* Cambia el color de fondo a rojo */
+        }
+
+
+        /* Cambia el color de los botones de reproducción */
+        audio::-webkit-media-controls-start-playback-button,
+        audio::-webkit-media-controls-play-button {
+            color: black;
+            /* Cambia el color de los botones a blanco */
+        }
+    </style>
+
+    <audio controls autoplay volume="0.5">
+        <source src="sounds/song1.mp3" type="audio/mpeg">
+        Tu navegador no soporta la reproducción de audio.
+    </audio>
+
+
+----------------------------------------------------------------------------------------------------

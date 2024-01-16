@@ -1,0 +1,80 @@
+Html
+-----
+
+<main>
+    <section>
+        <div class="containerimages">
+            <div class="wrapper">
+                <img src="images/elemento1.jpg">
+                <img src="images/elemento2.jpg">
+                <img src="images/elemento3.jpg">
+                <img src="images/elemento4.jpg">
+                <img src="images/elemento5.jpg">
+                <img src="images/elemento6.jpg">
+                <img src="images/elemento7.jpg">
+                <img src="images/elemento8.jpg">
+                <img src="images/elemento9.jpg">
+                <img src="images/elemento10.jpg">
+                <img src="images/elemento11.jpg">
+                <img src="images/elemento12.jpg">
+            </div>
+        </div>
+    </section>
+
+CSS
+-----
+
+/*-------------------------------Carrusel images-------------------------*/
+.containerimages {
+    width: 300%;
+    height: 100%;
+    max-height: 450px;
+    display: flex;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 56%;
+    left: 80%;
+    overflow: hidden;
+}
+
+.wrapper {
+    width: 900%;
+    
+    display: flex;
+    justify-content: center;
+    /*timer del carrusel*/
+    animation: slide 1700s infinite;
+}
+
+@keyframes slide {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-100%);
+    }
+
+    30% {
+        transform: translateX(-100%);
+    }
+
+    55% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-200%);
+    }
+
+    80% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
+/*------------------------------------------------------------------------*/
